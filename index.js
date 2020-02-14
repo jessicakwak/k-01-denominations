@@ -1,21 +1,21 @@
 // alert("connected");
-let input;
-
-const setAmt = content => {
-  input = content.value;
-};
+// let input;
+//
+// const setAmt = content => {
+//   input = content.value;
+// };
 
 const calculate = num => {
   let q;
   const arr = [];
   while (getDenom(num) > 0) {
-    q = Math.floor(num / getDenom(num));
+    q = Math.floor(num.toFixed(2) / getDenom(num));
     for (var i = 0; i < q; i++) {
       arr.push(getDenom(num));
     }
     num = num % getDenom(num);
   }
-  console.log(arr);
+
   return arr;
 };
 
@@ -34,5 +34,9 @@ const getDenom = amt => {
     ? 0.1
     : amt < 0.1 && amt >= 0.05
     ? 0.05
-    : 0.01;
+    : amt < 0.05 && amt >= 0.01
+    ? 0.01
+    : // : amt < 0.01 && amt >= 0.001
+      // ? 0.01
+      -1;
 };
