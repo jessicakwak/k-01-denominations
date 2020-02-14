@@ -1,11 +1,12 @@
 // alert("connected");
-// let input;
-//
-// const setAmt = content => {
-//   input = content.value;
-// };
+let input;
 
-const calculate = num => {
+const setAmt = content => {
+  input = content.value;
+};
+
+const calculate = () => {
+  let num = Number(input);
   let q;
   const arr = [];
   while (getDenom(num) > 0) {
@@ -16,7 +17,9 @@ const calculate = num => {
     num = num % getDenom(num);
   }
 
-  return arr;
+  document.querySelector(
+    "#outcome"
+  ).innerHTML = `${input} broken down into smaller bills:<br> [${arr}]`;
 };
 
 const getDenom = amt => {
