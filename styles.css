@@ -1,0 +1,19 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  background-color: #ffe3ed;
+}
+
+.main-container {
+  display: inline-block;
+  margin-top: 3%;
+  background-color: #fffdf9;
+  width: 80%;
+  min-height: 100px;
+  word-wrap: break-word;
+  padding: 2%;
+}
+
+input[type="number"] {
+  width: 200px;
+}
