@@ -19,7 +19,7 @@ const calculate = () => {
 
   document.querySelector(
     "#outcome"
-  ).innerHTML = `${input} broken down into smaller bills:<br> [${arr}]`;
+  ).innerHTML = `$${input} broken down into smaller bills:<br> [${arr}]`;
 };
 
 const getDenom = amt => {

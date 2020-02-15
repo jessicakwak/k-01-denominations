@@ -16,4 +16,26 @@ body {
 
 input[type="number"] {
   width: 200px;
+  height: 25px;
+  margin-bottom: 2%;
+  font-size: 1rem;
+}
+
+button {
+  width: 200px;
+  height: 30px;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background-color: #ff9d9d;
+  color: white;
+  border: 0px;
+  outline: none;
+}
+
+button:hover {
+  background-color: #ffc2c2;
+}
+
+p {
+  color: #ff2e63;
 }
